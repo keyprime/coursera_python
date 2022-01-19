@@ -1,3 +1,38 @@
+# явное преобразование типов:
+# int(): преобразует значение в целое число
+# float(): преобразует значение в число с плавающей точкой
+# str(): преобразует значение в строку
+a = "2"           # строка
+b = 3             # число
+print(a + b)      # ошибка TypeError: can only concatenate str (not "int") to str
+print(int(a) + b) # 5
+b = int(3.7)      # b = 3
+e = int(False)    # e = 0
+f = int(True)     # f = 1
+b = int("a1c")    # Ошибка ValueError: invalid literal for int() with base 10: 'a1c'
+c = int("4.7")    # Ошибка ValueError: invalid literal for int() with base 10: '4.7'
+
+a = "2.7"
+b = 3
+c = float(a) + b
+print(c)            # 5.7
+a = float(15)       # a = 15.0
+b = float(3.7)      # b = 3.7
+c = float("4.7")    # c = 4.7
+d = float("5")      # d = 5.0
+e = float(False)    # e = 0.0
+f = float(True)     # f = 1.0
+d = float("abc")    # Ошибка ValueError: could not convert string to float: 'abc'
+
+age = 22
+message = "Age: " + age     # Ошибка TypeError: can only concatenate str (not "int") to str
+print(message)
+a = str(False)      # a = "False"
+b = str(True)       # b = "True"
+c = str(5)          # c = "5"
+d = str(5.7)        # d = "5.7"
+
+
 # доступ к отдельным символам строки по индексу:
 string = "hello world" # индексы от 0 до 10
 c0 = string[0]  # h
