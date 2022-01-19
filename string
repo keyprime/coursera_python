@@ -1,0 +1,54 @@
+# доступ к отдельным символам строки по индексу:
+string = "hello world" # индексы от 0 до 10
+c0 = string[0]  # h
+print(c0)
+c6 = string[6]  # w
+print(c6)
+c1 = string[-1]  # d
+print(c1)
+c5 = string[-5]  # w
+print(c5)
+c11 = string[11]  # ошибка IndexError: string index out of range
+print(c11)
+
+# строка - это неизменяемый (immutable) тип
+# нельзя изменить какой-то отдельный символ строки
+# чтобы полностью переустановить значение строки, нужно присвоить ей другое значение.
+string = "hello world"
+string[1] = "R" # ошибка TypeError: 'str' object does not support item assignment
+
+# Получение подстроки - извлекается последовательность символов начиная
+# string[:end]: с 0-го индекса по индекс end
+# string[start:end]: с индекса start по индекс end
+# string[start:end:step]: с индекса start по индекс end через шаг step
+string = "hello world"
+ 
+# с 0 до 5 символа
+sub_string1 = string[:5]
+print(sub_string1)      # hello
+ 
+# со 2 до 5 символа
+sub_string2 = string[2:5]
+print(sub_string2)      # llo
+ 
+# со 2 по 9 символ через один символ
+sub_string3 = string[2:9:2]
+print(sub_string3)      # lowr
+
+# функции ord и len
+print(ord("A"))     # 65 - числовое значение для символа в кодировке Unicode
+string = "hello world"
+length = len(string)
+print(length)   # 11 - длина строки
+
+# поиск в строке
+string = "hello world"
+exist = "hello" in string
+print(exist)    # True
+exist = "sword" in string
+print(exist)    # False
+
+# перебор строки
+string = "hello world"
+for char in string:
+    print(char) # вывод последовательно всех символов строки
