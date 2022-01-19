@@ -1,5 +1,6 @@
-# вывод на консоль
+# функция print() - вывод на консоль, аргумент - строка:
 print('Hello, world!') # Hello, world!
+print("Full name:", "Tom", "Smith") # Full name: Tom Smith
 print(2 + 3) # 5
 print('2' + '3') # 23
 print('2 + 3 =', 2 + 3) # 2 + 3 = 5
@@ -8,3 +9,7 @@ print(' = ', 1 + 2 + 3 + 4, sep='') #  = 10
 print(1, 2, 3, 4, sep=' + ', end='') # 1 + 2 + 3 + 4 = 10
 print(' = ', 1 + 2 + 3 + 4, sep='')
 Print("Hello World") # ошибка NameError: name 'Print' is not defined
+
+# функция input() - ввод, возвращает введенную строку
+name = input("Введите имя: ") # Введите имя: Tom
+print("Привет", name) # Привет Tom
