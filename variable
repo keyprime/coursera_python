@@ -1,8 +1,21 @@
-# переменные camelTyping, знака присваивания =
+# переменные, знак присваивания =
+name = "Tom" # определена переменная name, которая хранит строку Tom
+userName = "Tom" # camelTyping (camel case)
+user_name = "Tom" # underscore notation
+
+# две разные переменные (регистрозависимость)
+name = "Tom"
+Name = "Tom"
+
+name = "Tom"  # переменной name присваивается значение "Tom"
+print(name)   # вывод: Tom
+name = "Bob"  # изменяется значение на "Bob"
+print(name)   # вывод: Bob
+
 speed = 108
 time = 12
 dist = speed * time
-print(dist)
+print(dist)   # 1296
 
 # арифметические операции:
 print(6 + 2)  # 8
