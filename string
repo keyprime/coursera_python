@@ -32,9 +32,14 @@ b = str(True)       # b = "True"
 c = str(5)          # c = "5"
 d = str(5.7)        # d = "5.7"
 
-print("Мурзик\t5 лет") # Мурзик  5 лет   табуляция 
+print("Мурзик\t5 лет")       # Мурзик  5 лет   табуляция 
 print('Рыжик любил полежать \nна крыше автомобиля "Жигули"') # перевод строки
-print(r'D:\cats.txt') # D:\cats.txt  отключение экранирования
+print(r'D:\cats.txt')        # D:\cats.txt  отключение экранирования
+
+# конкатенация (сложение, склейка) строк
+goodByePhrase = 'Good Bye'
+person = input("Введите имя: ")
+print(goodByePhrase + ', ' + person + '!')        # Good Bye, Tom!
 
 answer = 2 + 3
 expr = '2 + 3 = '
@@ -43,11 +48,6 @@ print(answer + 1)             # 6
 
 answer = '2 + 3 = ' + str(2 + 3)     # 2 + 3 = 5
 print(answer)
-
-# конкатенация (сложение, склейка) строк
-goodByePhrase = 'Good Bye'
-person = input("Введите имя: ")
-print(goodByePhrase + ', ' + person + '!')        # Good Bye, Tom!
 
 # дублирование строки
 print('spam' * 3)            # spamspamspam
@@ -86,7 +86,7 @@ string[1] = "R" # ошибка TypeError: 'str' object does not support item ass
 string = string [0] + 'b' + string [2:]
 print(string)  # hbllo world
 
-# Получение подстроки - извлекается последовательность символов начиная
+# Получение подстроки (срез) - извлекается последовательность символов начиная
 # string[:end]: с 0-го индекса по индекс end
 # string[start:end]: с индекса start по индекс end
 # string[start:end:step]: с индекса start по индекс end через шаг step
