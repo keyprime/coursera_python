@@ -32,6 +32,10 @@ print("Привет,", name)         # Привет, Tom
 name = input('Введите имя: ')
 print('Hello, ', name, '!', sep='') # Hello, Harry!
 
+name = input('Введите имя: ')
+print('Привет,', name, end='')
+print('!')                          # Привет, Harry!
+
 # сумма двух введенных чисел
 a = int(input())
 b = int(input())
