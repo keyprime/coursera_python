@@ -1,6 +1,6 @@
 # переменные, знак присваивания =
 name = "Tom" # определена переменная name, которая хранит строку Tom
-userName = "Tom" # camelTyping (camel case)
+userName = "Tom" # camelTyping (camel case), PEP 8 — Python Enhanced Proposal
 user_name = "Tom" # underscore notation (lower_case_with_underscores)
 
 # множественное присваивание
