@@ -38,3 +38,8 @@ cost1 = a * 100 + b
 cost2 = c * 100 + d
 totalCost = cost1 + cost2
 print(totalCost //100, totalCost % 100)
+
+# вводится число N, необходимо отрезать от него K последних цифр. Например, при N = 123456 и K = 3 ответ должен быть 123.
+n = int(input())
+k = int(input())
+print(n // 10**k)
