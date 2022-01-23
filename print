@@ -43,6 +43,12 @@ print(a + b)
 
 a = int(input())
 b = int(input())
+print(a, '+', b, '=', a + b)
+print(a, '-', b, '=', a - b)
+print(a, '*', b, '=', a * b)
+
+a = int(input())
+b = int(input())
 c = int(input())
 d = int(input())
 cost1 = a * 100 + b
