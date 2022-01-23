@@ -17,6 +17,12 @@ print("Hello Python")    # Hello World and Hello everyone and Hello Python
 
 Print("Hello World")     # ошибка NameError: name 'Print' is not defined
 
-# функция input() - ввод с консоли, возвращает введенную строку
+# функция input() - ввод строки line с консоли, возвращает введенную строку
+# line - строка, оканчивающаяся переводом строки
 name = input("Введите имя: ") # Введите имя: Tom, результат ввода пользователя передается в переменную name.
 print("Привет", name)         # Привет Tom
+
+# сумма двух введенных чисел
+a = int(input())
+b = int(input())
+print(a + b)
