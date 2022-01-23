@@ -37,10 +37,10 @@ expr = '2 + 3 = '
 print(expr + str(ans))     # 2 + 3 = 5
 print(ans + 1)             # 6
 
-# конкатенация (сложение)
-S1 = 'spam'
-S2 = 'eggs'
-print(S1 + S2)        # spameggs
+# конкатенация (сложение) строк
+s1 = 'spam'
+s2 = 'eggs'
+print(s1 + s2)        # spameggs
 
 # дублирование строки
 print('spam' * 3)     # spamspamspam
