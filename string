@@ -32,33 +32,53 @@ b = str(True)       # b = "True"
 c = str(5)          # c = "5"
 d = str(5.7)        # d = "5.7"
 
-ans = 2 + 3
-expr = '2 + 3 = '
-print(expr + str(ans))     # 2 + 3 = 5
-print(ans + 1)             # 6
+print("Мурзик\t5 лет") # Мурзик  5 лет   табуляция 
+print('Рыжик любил полежать \nна крыше автомобиля "Жигули"') # перевод строки
+print(r'D:\cats.txt') # D:\cats.txt  отключение экранирования
 
-# конкатенация (сложение) строк
-s1 = 'spam'
-s2 = 'eggs'
-print(s1 + s2)        # spameggs
+answer = 2 + 3
+expr = '2 + 3 = '
+print(expr + str(answer))     # 2 + 3 = 5
+print(answer + 1)             # 6
+
+answer = '2 + 3 = ' + str(2 + 3)     # 2 + 3 = 5
+print(answer)
+
+# конкатенация (сложение, склейка) строк
+goodByePhrase = 'Good Bye'
+person = input("Введите имя: ")
+print(goodByePhrase + ', ' + person + '!')        # Good Bye, Tom!
 
 # дублирование строки
-print('spam' * 3)     # spamspamspam
+print('spam' * 3)            # spamspamspam
 
 # доступ к отдельным символам строки по индексу:
 string = "hello world" # индексы от 0 до 10
-c0 = string[0]  # h
+c0 = string[0]    # h
 print(c0)
-c6 = string[6]  # w
+c6 = string[6]    # w
 print(c6)
-c1 = string[-1]  # d
+c1 = string[-1]   # d
 print(c1)
-c5 = string[-5]  # w
+c5 = string[-5]   # w
 print(c5)
 c11 = string[11]  # ошибка IndexError: string index out of range
 print(c11)
 
-# строка - это неизменяемый (immutable) тип
+# функция split() - разбить строку по указанному разделителю (пробел)
+terminator = "I\'ll be back."
+list = terminator.split()
+print(list[0])               # I'll
+
+myString = "one|two|three"
+list = myString.split("|")
+print(list[1])               # two
+
+myString = "one|two|three"
+list = myString.split("|", 1)
+print(list[1])               # two|three
+
+# строка - это неизменяемая (immutable) последовательность символов
 # нельзя изменить какой-то отдельный символ строки
 # чтобы полностью переустановить значение строки, нужно присвоить ей другое значение.
 string = "hello world"
