@@ -1,7 +1,7 @@
 # переменные, знак присваивания =
 name = "Tom" # определена переменная name, которая хранит строку Tom
 userName = "Tom" # camelTyping (camel case)
-user_name = "Tom" # underscore notation
+user_name = "Tom" # underscore notation (lower_case_with_underscores)
 
 # две разные переменные (регистрозависимость)
 name = "Tom"
