@@ -32,6 +32,18 @@ b = str(True)       # b = "True"
 c = str(5)          # c = "5"
 d = str(5.7)        # d = "5.7"
 
+ans = 2 + 3
+expr = '2 + 3 = '
+print(expr + str(ans))     # 2 + 3 = 5
+print(ans + 1)             # 6
+
+# конкатенация (сложение)
+S1 = 'spam'
+S2 = 'eggs'
+print(S1 + S2)        # spameggs
+
+# дублирование строки
+print('spam' * 3)     # spamspamspam
 
 # доступ к отдельным символам строки по индексу:
 string = "hello world" # индексы от 0 до 10
@@ -51,6 +63,8 @@ print(c11)
 # чтобы полностью переустановить значение строки, нужно присвоить ей другое значение.
 string = "hello world"
 string[1] = "R" # ошибка TypeError: 'str' object does not support item assignment
+string = string [0] + 'b' + string [2:]
+print(string)  # hbllo world
 
 # Получение подстроки - извлекается последовательность символов начиная
 # string[:end]: с 0-го индекса по индекс end
@@ -74,7 +88,7 @@ print(sub_string3)      # lowr
 print(ord("A"))     # 65 - числовое значение для символа в кодировке Unicode
 string = "hello world"
 length = len(string)
-print(length)   # 11 - длина строки
+print(length)       # 11 - длина строки
 
 # поиск в строке
 string = "hello world"
