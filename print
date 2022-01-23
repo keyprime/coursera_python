@@ -22,6 +22,9 @@ Print("Hello World")     # ошибка NameError: name 'Print' is not defined
 name = input("Введите имя: ") # Введите имя: Tom, результат ввода пользователя передается в переменную name.
 print("Привет", name)         # Привет Tom
 
+name = input('Введите имя: ')
+print('Hello, ', name, '!', sep='') # Hello, Harry!
+
 # сумма двух введенных чисел
 a = int(input())
 b = int(input())
