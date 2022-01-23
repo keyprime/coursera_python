@@ -3,6 +3,18 @@ name = "Tom" # определена переменная name, которая х
 userName = "Tom" # camelTyping (camel case)
 user_name = "Tom" # underscore notation (lower_case_with_underscores)
 
+# множественное присваивание
+name, surname = 'Timur', 'Guev'
+print('Имя:', name, 'Фамилия:', surname)
+
+name, surname = input(), input()
+print('Имя:', name, 'Фамилия:', surname)
+
+# обмен значениями
+name1 = 'Timur'
+name2 = 'Gvido'
+name1, name2 = name2, name1
+
 # две разные переменные (регистрозависимость)
 name = "Tom"
 Name = "Tom"
