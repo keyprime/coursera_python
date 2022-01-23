@@ -110,6 +110,12 @@ print(sub_string2)          # llo
 sub_string3 = string[2:9:2] # со 2 по 9 символ через один символ
 print(sub_string3)          # lowr
 
+sub_string3 = string[::-1]
+print(sub_string3)          # dlrow olleh
+
+sub_string3 = string[2::2]
+print(sub_string3)          # lowrd
+
 # функции ord и len
 print(ord("A"))     # 65 - числовое значение для символа в кодировке Unicode
 string = "hello world"
