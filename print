@@ -16,6 +16,7 @@ end='\n'  # перевод строки
 print('a', 'b', 'c', sep='', end='')  # abc
 print(1, 2, 3, 4, sep=' + ', end='')  # 1 + 2 + 3 + 4 = 10
 print(' = ', 1 + 2 + 3 + 4, sep='')
+print(input(), input(), input(), sep=input())
 
 print("Hello World", end=" and ")
 print("Hello everyone", end=" and ")
