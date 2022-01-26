@@ -41,6 +41,10 @@ goodByePhrase = 'Good Bye'
 person = input("Введите имя: ")
 print(goodByePhrase + ', ' + person + '!')        # Good Bye, Tom!
 
+fname = input("Input your First Name : ")
+lname = input("Input your Last Name : ")
+print ("Hello  " + lname + " " + fname)
+
 answer = 2 + 3
 expr = '2 + 3 = '
 print(expr + str(answer))     # 2 + 3 = 5
